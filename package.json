@@ -1,0 +1,43 @@
+{
+  "name": "kanjicli",
+  "version": "0.0.1",
+  "description": "Command Cli to learn Kanji",
+  "scripts": {
+    "start": "node dist/bin/kanjicli.js",
+    "build": "tsc --build",
+    "clean": "rm -rf dist"
+  },
+  "bin": {
+    "kanjicli": "./dist/bin/kanjicli.js"
+  },
+  "files": [
+    "dist",
+    "kanji",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/daikiejp/kanjicli.git"
+  },
+  "keywords": [
+    "kanjicli",
+    "kanji",
+    "japanese"
+  ],
+  "author": "Danny Davila",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daikiejp/kanjicli/issues"
+  },
+  "homepage": "https://github.com/daikiejp/kanjicli#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "@types/inquirer": "^9.0.7"
+  },
+  "type": "module",
+  "dependencies": {
+    "inquirer": "^9.2.12"
+  }
+}
